@@ -1,7 +1,146 @@
+
+
 .isVisible {
   opacity: 1;
 }
 
 .isNotVisible {
   opacity: 0;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+ }
+
+ .home{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  padding: 0 1rem;
+  line-height: 2;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  border: 3px solid #EF4765; 
+}
+
+.home:hover {
+  background: #FF9A5A;
+  color: white;
+}
+
+ .logo{
+  color: black;
+ }
+
+ .about{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  padding: 0 1rem;
+  line-height: 2;
+  border: 3px solid #EF4765;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+ }
+
+ .about:hover {
+  background: #FF9A5A;
+  color: white;
+}
+
+
+ .input{
+  width: 50%;
+  background-color: white;
+  border: 3px solid #EF4765;
+  border-radius: 24px;
+  padding: 0.8rem;
+}
+
+.inputwrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  display: grid;
+  margin: 2em;
+  padding: 2em;
+  border: 3px solid #EF4765;
+  border-radius: 24px;
+  position: relative;
+  transition: background-color 0.5s;
+}
+.card:hover{
+  background-color: #FF9A5A;
+}
+
+.noBikes {
+  color: red;
+  border: 1px solid red;
+}
+
+.allBikes {
+  color: orange;
+  border: 1px solid orange;
+}
+
+.detailcard {
+  margin: 2em;
+  color: black;
+}
+
+.detailinfo{
+  color: #EF4765;
+  margin-top: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.name{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background:  #FF9A5A;
+  padding: 0 1rem;
+  line-height: 3;
+  border-radius: 22px;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 
+}
+
+.kilometer{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: 800;
+  font-size: 24px;
+  padding: 10px 10px 0 0;
+}
+
+.km{
+  font-weight: 00;
+  font-size: 18px;
+}
+
+.free{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EF4765;
+  font-weight: 800;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 24px;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+.imagestyle{
+  margin-top: 2em;
+  border-radius: 1em;
 }
