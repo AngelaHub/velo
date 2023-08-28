@@ -1,5 +1,4 @@
 
-
 .isVisible {
   opacity: 1;
 }
@@ -74,7 +73,7 @@
   margin: 2em;
   padding: 2em;
   border: 3px solid #EF4765;
-  border-radius: 24px;
+  border-radius: 42px;
   position: relative;
   transition: background-color 0.5s;
 }
@@ -83,13 +82,21 @@
 }
 
 .noBikes {
-  color: red;
-  border: 1px solid red;
+  color: darkred;
+  border: 3px solid darkred;
+}
+
+.noBikes:hover{
+  background-color: lightcoral;
 }
 
 .allBikes {
-  color: orange;
-  border: 1px solid orange;
+  color: darkgreen;
+  border: 3px solid green;
+}
+
+.allBikes:hover{
+  background-color: lightgreen;
 }
 
 .detailcard {
@@ -97,13 +104,14 @@
   color: black;
 }
 
-.detailinfo{
-  color: #EF4765;
+.detailinfo {
+  color: black;
   margin-top: 2em;
+  line-height: 22px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.name{
+.name {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -114,27 +122,26 @@
   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 
 }
 
-.kilometer{
+.kilometer {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-weight: 800;
-  font-size: 24px;
-  padding: 10px 10px 0 0;
+  font-size: 22px;
+  padding: 20px 10px 0 0;
 }
 
-.km{
-  font-weight: 00;
-  font-size: 18px;
+.km {
+  font-size: 20px;
 }
 
-.free{
+.free {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #EF4765;
   font-weight: 800;
   background-color: white;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 24px;
   padding: 2px;
   margin-top: 10px;
