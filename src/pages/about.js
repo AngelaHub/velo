@@ -1,3 +1,5 @@
+import styles from '@/styles/Home.module.css'
+import {useState} from 'react';
 import useNetwork from '@/data/network';
 
 export default function About() {
@@ -7,8 +9,8 @@ export default function About() {
   if (isError) return <div>Error</div>
 
   return (
-    <div>
-      <h1>About {network.name}</h1>
+    <div className={styles.detailcard}>
+      <h1 className={styles.kilometer}>About {network.name}</h1>
     </div>
   )
 }

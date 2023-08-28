@@ -1,3 +1,4 @@
+import styles from '@/styles/Home.module.css';
 import {useState, useEffect} from 'react';
 import useNetwork from '@/data/network';
 import {getDistance} from '@/functions/getDistance';
@@ -47,11 +48,17 @@ export default function Home() {
 
   return (
     <div>
-      <input type="text" value={filter} onChange={handleFilterChange}/>
+      <div className={styles.inputwrap}>
+      <input className={styles.input} type="text" value={filter} onChange={handleFilterChange}/>
+      </div>
       {stations.map(station => 
-        <div key={station.id}>
-          <Link href={`/stations/${station.id}`}>{station.name}: {station.distance}km</Link>
-        </div>)}
+        <Link href={`/stations/${station.id}`} className={`${styles.card} ${station.free_bikes === 0 ? styles.noBikes : (station.empty_slots === 0 ? styles.allBikes : '')}`} key={station.id}> 
+          <span className={styles.name}>{station.name}</span>
+          <span className={styles.kilometer}>{getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}<span className={styles.km}>km</span></span>
+          <span className={styles.free}>{station.free_bikes} / {station.empty_slots + station.free_bikes}</span>
+        </Link>
+      )}
+
     </div>
   )
 }
